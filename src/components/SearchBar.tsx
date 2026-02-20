@@ -24,7 +24,7 @@ export default function SearchBar() {
           />
 
           <button className="bg-rose-500 text-white rounded-full p-4 hover:bg-rose-600 transition">
-            <img src={searchImage} alt="Search" className="w-4 h-4" />
+            <img src={searchImage} alt="Search" className="w-5 h-5" />
           </button>
           
         </div>
