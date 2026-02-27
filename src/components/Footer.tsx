@@ -4,11 +4,11 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-6 py-12 text-sm text-gray-600 flex gap-2">
         <p>&copy; 2026 Mini AirBnB  </p>
          &bull;
-        <a href="">Privacy</a>
+        <a href="" className="hover:underline">Privacy</a>
         &bull;
-        <a href="">Terms</a>
+        <a href="" className="hover:underline">Terms</a>
         &bull;
-        <a href="">Your Privacy Choices</a>
+        <a href="" className="hover:underline">Your Privacy Choices</a>
       </div>
     </footer>
   );
