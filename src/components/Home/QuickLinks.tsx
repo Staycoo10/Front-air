@@ -8,7 +8,7 @@ export default function QuickLinks() {
       <div className="grid md:grid-cols-3 gap-6">
         {["Despre noi", "Contact", "Contul tău"].map((item, index) => (
           <div key={index} className="cursor-pointer group">
-            <div className="h-64 rounded-xl bg-gradient-to-br from-indigo-400 to-indigo-600 mb-4 group-hover:scale-105 transition"></div>
+            <div className="h-64 rounded-xl mb-4 group-hover:scale-105 transition"></div>
             <h3 className="font-semibold text-lg">{item}</h3>
           </div>
         ))}

@@ -2,10 +2,10 @@ import searchImage from '../../assets/Search.png';
 
 export default function SearchBar() {
   return (
-    <div className="bg-gradient-to-b from-gray-50 to-white py-6 md:py-12">
+    <div className=" py-6 md:py-12">
       <div className="max-w-5xl mx-auto px-4 md:px-6">
 
-        <div className="bg-white rounded-[2rem] md:rounded-full shadow-xl border border-gray-200 p-2 flex flex-col md:flex-row items-stretch md:items-center divide-y md:divide-y-0 md:divide-x divide-gray-200">
+        <div className="bg-white rounded-4xl md:rounded-full shadow-xl border border-gray-200 p-2 flex flex-col md:flex-row items-stretch md:items-center divide-y md:divide-y-0 md:divide-x divide-gray-200">
           
           <input 
             placeholder="Caută destinații" 

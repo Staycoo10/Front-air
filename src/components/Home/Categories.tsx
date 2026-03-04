@@ -51,10 +51,10 @@ export default function Categories() {
       <div className="flex overflow-x-auto gap-4 pb-8 no-scrollbar snap-x">
         {cities.map((city, index) => (
           /* FIX 1: Setăm o lățime fixă pentru fiecare coloană (ex: 280px) */
-          <div key={index} className="min-w-[280px] w-[280px] flex-shrink-0 snap-start cursor-pointer">
+          <div key={index} className="min-w-70 w-70 shrink-0 snap-start cursor-pointer">
             
             {/* FIX 2: Container cu aspect-ratio și overflow-hidden */}
-            <div className="relative aspect-[4/3] rounded-xl overflow-hidden mb-3">
+            <div className="relative aspect-4/3 rounded-xl overflow-hidden mb-3">
               <img 
                 src={city.image} 
                 alt={city.name} 
