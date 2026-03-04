@@ -1,8 +1,8 @@
-import Navbar from "../components/Navbar";
-import SearchBar from "../components/SearchBar";
-import Categories from "../components/Categories";
-import QuickLinks from "../components/QuickLinks";
-import Footer from "../components/Footer";
+import Navbar from "../components/Home/Navbar";
+import SearchBar from "../components/Home/SearchBar";
+import Categories from "../components/Home/Categories";
+import QuickLinks from "../components/Home/QuickLinks";
+import Footer from "../components/Home/Footer";
 
 export default function Home() {
   return (
