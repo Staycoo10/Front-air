@@ -10,13 +10,13 @@ export default function Navbar() {
         <div className="hidden md:flex items-center space-x-8">
           <Link to='/' className="text-gray-900 font-medium border-b-2 border-gray-900 pb-1">Cazări</Link>
           <Link to='/experience' className="text-gray-600 hover:text-gray-900 transition">Experiențe</Link>
-          <Link to='/aventuri' className="text-gray-600 hover:text-gray-900 transition">Aventuri</Link>
+          <Link to='/servicii' className="text-gray-600 hover:text-gray-900 transition">Servicii</Link>
         </div>
 
         
         <div className="flex items-center space-x-4">
           
-          <a href="#" className="text-sm text-gray-700 hover:bg-gray-50 px-3 py-2 rounded-full transition">
+          <a href="/" className="text-sm text-gray-700 hover:bg-gray-50 px-3 py-2 rounded-full transition">
             Contactează-ne
           </a>
           <Link to='/signup' className="border border-gray-300 rounded-full px-4 py-2 hover:shadow-md transition">Login</Link>

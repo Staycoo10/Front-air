@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import Experience from './pages/Experience';
 import ListingDetail from './pages/ListingDetail';
 import SignUp from './pages/SingUp';
+import Servicii from './pages/Servicii';
 function App() {
   return (
     <BrowserRouter>
@@ -10,6 +11,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/listing/:id" element={<ListingDetail />} />
         <Route path='/experience' element={<Experience />} />
+        <Route path='/servicii' element={<Servicii />} />
         <Route path='/signup' element={<SignUp />} />
       </Routes>
     </BrowserRouter>
