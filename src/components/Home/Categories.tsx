@@ -24,18 +24,19 @@ export default function Categories() {
         
         {/* 3. Atașăm funcția scroll pe butoane */}
         <div className="flex gap-2">
-          <button 
-            onClick={() => scroll("left")}
-            className="p-2 border rounded-full hover:bg-gray-100 transition text-sm active:scale-90"
-          >
-            ←
-          </button>
-          <button 
-            onClick={() => scroll("right")}
-            className="p-2 border rounded-full hover:bg-gray-100 transition text-sm active:scale-90"
-          >
-            →
-          </button>
+          <button
+  onClick={() => scroll("left")}
+  className="w-8 h-8 flex items-center justify-center border rounded-full hover:bg-gray-100 transition text-sm active:scale-90"
+>
+  {"<"}
+</button>
+
+<button
+  onClick={() => scroll("right")}
+  className="w-8 h-8 flex items-center justify-center border rounded-full hover:bg-gray-100 transition text-sm active:scale-90"
+>
+  {">"}
+</button>
         </div>
       </div>
 

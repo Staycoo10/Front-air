@@ -59,8 +59,9 @@ export default function SearchBar() {
 
           {/* 4. Declanșăm căutarea la apăsarea butonului */}
           <button 
+            
             onClick={handleSearch}
-            className="bg-rose-500 text-white rounded-2xl md:rounded-full p-4 hover:bg-rose-600 transition flex items-center justify-center mt-2 md:mt-0"
+            className="bg-rose-500 text-white rounded-2xl md:rounded-full p-4 hover:bg-rose-600 transition flex items-center justify-center mt-2 cursor-pointer md:mt-0"
           >
             <img src={searchImage} alt="Search" className="w-5 h-5 mr-2 md:mr-0" />
             <span className="md:hidden font-semibold">Caută</span>
