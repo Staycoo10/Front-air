@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Navbar from '../components/Home/Navbar';
+import Footer from '../components/Home/Footer';
 const Login: React.FC = () => {
   const [phoneNumber, setPhoneNumber] = useState('');
   const [countryCode, setCountryCode] = useState('+373');
@@ -17,7 +18,7 @@ const Login: React.FC = () => {
 
     <div className="flex flex-col min-h-screen bg-gray-100 font-sans">
         <Navbar />
-      <main className="flex-1 flex items-center justify-center p-4">
+      <main className="flex-1 flex items-center justify-center">
         <div className="w-full max-w-142 bg-white rounded-xl border border-gray-300 shadow-lg">
           
           {/* Header-ul ferestrei de login */}
@@ -94,6 +95,7 @@ const Login: React.FC = () => {
         </div>
       </div>
       </main>
+      <Footer />
     </div>
   );
 };
