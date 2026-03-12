@@ -1,69 +1,33 @@
-export const originals = [
-  {
-    id: "orig-1",
-    title: "Wheelchair curling cu un Olimpic",
-    host: "Amos Mosaner",
-    location: "Cortina d'Ampezzo, Italy",
-    price: 30,
-    image: "https://images.unsplash.com/photo-1542596594-649edbc13630?auto=format&fit=crop&w=600&q=80",
-    badge: "Original"
-  },
-  {
-    id: "orig-2",
-    title: "Tapas și trofee cu Fernando",
-    host: "Fernando Morientes",
-    location: "Madrid, Spain",
-    price: 55,
-    image: "https://images.unsplash.com/photo-1543852786-1cf6624b9987?auto=format&fit=crop&w=600&q=80",
-    badge: "Original"
-  },
-  {
-    id: "orig-3",
-    title: "Sesiune de sculptură în marmură",
-    host: "Local Guide",
-    location: "Athens, Greece",
-    price: 79,
-    image: "https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=600&q=80",
-    badge: "Original"
-  },
-  {
-    id: "orig-4",
-    title: "Mixology și degustare de cocktailuri",
-    host: "Expert Bartender",
-    location: "Paris, France",
-    price: 45,
-    image: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=600&q=80",
-    badge: "Original"
-  }
-];
+// types.ts (or at the top of your file)
+export type Experience = {
+  id: string;
+  category: string;
+  title: string;
+  image: string;
+  price: number;
+  unit: string;
+  rating: number;
+  location?: string;
+  minBooking?: string;
+  isPopular?: boolean;
+};
 
-export const popularExperiences = [
-  {
-    id: "pop-1",
-    title: "Tur real al Comunismului în România",
-    rating: 4.97,
-    price: 31,
-    image: "https://images.unsplash.com/photo-1584646098378-0874589d76b1?auto=format&fit=crop&w=600&q=80"
-  },
-  {
-    id: "pop-2",
-    title: "Tur pietonal: Highlight-urile Bucureștiului",
-    rating: 4.90,
-    price: 21,
-    image: "https://images.unsplash.com/photo-1596280425330-01dc8a25c1bc?auto=format&fit=crop&w=600&q=80"
-  },
-  {
-    id: "pop-3",
-    title: "Pubs, Bars & History - The Tipsy Tour",
-    rating: 4.80,
-    price: 25,
-    image: "https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=600&q=80"
-  },
-  {
-    id: "pop-4",
-    title: "Mâncare locală și istorie - Tur ghidat",
-    rating: 4.92,
-    price: 30,
-    image: "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=600&q=80"
-  }
+export const mockExperiences: Experience[] = [
+  // Chefs
+  { id: 'c1', category: 'Chefs', title: 'Authentic Roman meal', image: 'https://images.unsplash.com/photo-1556910103-1c02745a872f?auto=format&fit=crop&q=80&w=600', price: 81, unit: 'guest', rating: 4.97 },
+  { id: 'c2', category: 'Chefs', title: 'Hyperlocal, foraged fare by Clair', image: 'https://images.unsplash.com/photo-1544025162-831514ebbf82?auto=format&fit=crop&q=80&w=600', price: 99, unit: 'guest', rating: 5.0, minBooking: 'Minimum $190 to book' },
+  { id: 'c3', category: 'Chefs', title: 'Behind the flame and fusion flavors by Erick', image: 'https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&q=80&w=600', price: 68, unit: 'guest', rating: 5.0, minBooking: 'Minimum $118 to book' },
+  { id: 'c4', category: 'Chefs', title: 'Vibrant Cali-Mediterranean menus by Liza', image: 'https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?auto=format&fit=crop&q=80&w=600', price: 65, unit: 'group', rating: 5.0 },
+  
+  // Training
+  { id: 't1', category: 'Training', title: 'Yoga and embodiment by Julia', image: 'https://images.unsplash.com/photo-1599901860904-17e6ed7083a0?auto=format&fit=crop&q=80&w=600', price: 25, unit: 'guest', rating: 5.0, minBooking: 'Minimum $200 to book' },
+  { id: 't2', category: 'Training', title: 'High-energy workouts by Vicky', image: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&q=80&w=600', price: 160, unit: 'guest', rating: 5.0, location: 'Redondo Beach, United States' },
+  { id: 't3', category: 'Training', title: 'Restorative fitness by Taylor', image: 'https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&q=80&w=600', price: 68, unit: 'guest', rating: 5.0, location: 'Los Angeles, United States' },
+  { id: 't4', category: 'Training', title: 'Total body training by Peter', image: 'https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&q=80&w=600', price: 50, unit: 'guest', rating: 5.0, location: 'Pasadena, United States' },
+
+  // Massage
+  { id: 'm1', category: 'Massage', title: 'Good Massage Mobile Services', image: 'https://images.unsplash.com/photo-1600334089648-b0d9d3028eb2?auto=format&fit=crop&q=80&w=600', price: 150, unit: 'guest', rating: 5.0, isPopular: true },
+  { id: 'm2', category: 'Massage', title: 'Hollywood recovery and relaxation by Daisy & team', image: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&q=80&w=600', price: 60, unit: 'guest', rating: 4.76, location: 'Los Angeles, United States' },
+  { id: 'm3', category: 'Massage', title: 'Deep tissue massage by Olga - London', image: 'https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&q=80&w=600', price: 101, unit: 'guest', rating: 5.0 },
+  { id: 'm4', category: 'Massage', title: 'Relaxing touch by Michael', image: 'https://images.unsplash.com/photo-1544161513-01f148e65893?auto=format&fit=crop&q=80&w=600', price: 130, unit: 'guest', rating: 5.0 }
 ];
