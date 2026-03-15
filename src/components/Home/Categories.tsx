@@ -22,28 +22,27 @@ export default function Categories() {
       <div className="flex justify-between items-center mb-6">
         <h2 className="text-2xl font-bold text-gray-800">Popular homes in Bucharest &rsaquo;</h2>
         
-        {/* 3. Atașăm funcția scroll pe butoane */}
+        {/* 3. Butoanele actualizate în stilul Airbnb */}
         <div className="flex gap-2">
-          <button
-  onClick={() => scroll("left")}
-  className="w-8 h-8 flex items-center justify-center border rounded-full hover:bg-gray-100 transition text-sm active:scale-90"
->
-  {"<"}
-</button>
-
-<button
-  onClick={() => scroll("right")}
-  className="w-8 h-8 flex items-center justify-center border rounded-full hover:bg-gray-100 transition text-sm active:scale-90"
->
-  {">"}
-</button>
+          <button 
+            onClick={() => scroll('left')} 
+            className="p-2.5 rounded-full border border-gray-300 hover:shadow-md transition-all active:scale-95 bg-white"
+          >
+            <svg viewBox="0 0 32 32" className="w-3.5 h-3.5 block fill-none stroke-current stroke-[4px]"><path d="M20 28 8.7 16.7a1 1 0 0 1 0-1.4L20 4"></path></svg>
+          </button>
+          <button 
+            onClick={() => scroll('right')} 
+            className="p-2.5 rounded-full border border-gray-300 hover:shadow-md transition-all active:scale-95 bg-white"
+          >
+            <svg viewBox="0 0 32 32" className="w-3.5 h-3.5 block fill-none stroke-current stroke-[4px]"><path d="m12 4 11.3 11.3a1 1 0 0 1 0 1.4L12 28"></path></svg>
+          </button>
         </div>
       </div>
 
-      {/* 4. Adăugăm scrollRef pe container */}
+      {/* 4. Adăugăm scrollRef pe container (am adăugat și ascunderea scrollbar-ului default) */}
       <div 
         ref={scrollRef}
-        className="flex overflow-x-auto gap-4 pb-8 no-scrollbar snap-x scroll-smooth"
+        className="flex overflow-x-auto gap-4 pb-8 snap-x scroll-smooth [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]"
       >
         {cities.map((city) => (
           <Link 
