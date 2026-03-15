@@ -57,7 +57,7 @@ export default function Navbar() {
             Contactează-ne
           </a>
           <Link
-            to="/signup"
+            to="/login"
             className="border border-gray-300 rounded-full px-4 py-2 hover:shadow-md transition"
           >
             Login

@@ -21,7 +21,7 @@ export const mockQuickLinks: QuickLink[] = [
   { 
     id: 'ql3', 
     title: 'Contul tău', 
-    path: '/cont', 
+    path: '/login', 
     image: 'https://www.siteminder.com/wp-content/uploads/2023/11/Airbnb-Host-Login.png' // Adăugăm o imagine cu un utilizator logându-se
   },
 ];

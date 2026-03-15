@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from "./pages/Home";
 import Experience from './pages/Experience';
 import ListingDetail from './pages/ListingDetail';
-import SignUp from './pages/SingUp';
+import Login from './pages/Login';
 import Servicii from './pages/Servicii';
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
         <Route path="/listing/:id" element={<ListingDetail />} />
         <Route path='/experience' element={<Experience />} />
         <Route path='/servicii' element={<Servicii />} />
-        <Route path='/signup' element={<SignUp />} />
+        <Route path='/login' element={<Login />} />
       </Routes>
     </BrowserRouter>
     );
