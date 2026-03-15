@@ -16,12 +16,12 @@ export const mockQuickLinks: QuickLink[] = [
     id: 'ql2', 
     title: 'Contact', 
     path: '/contact', 
-    image: 'https://images.contentstack.io/v3/assets/bltec2ed8e3c4b1e16d/blt1a805240919340d9/getting-started-with-airbnb-for-work-optimized.jpg' // Adăugăm o imagine primitoare cu un birou
+    image: 'https://images.contentstack.io/v3/assets/bltec2ed8e3c4b1e16d/blt1a805240919340d9/getting-started-with-airbnb-for-work-optimized.jpg' 
   },
   { 
     id: 'ql3', 
     title: 'Contul tău', 
     path: '/login', 
-    image: 'https://www.siteminder.com/wp-content/uploads/2023/11/Airbnb-Host-Login.png' // Adăugăm o imagine cu un utilizator logându-se
+    image: 'https://www.siteminder.com/wp-content/uploads/2023/11/Airbnb-Host-Login.png' 
   },
 ];
