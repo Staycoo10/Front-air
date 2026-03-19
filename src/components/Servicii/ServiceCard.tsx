@@ -22,7 +22,7 @@ const ServiceCard: React.FC<Props> = ({ service }) => {
               <svg viewBox="0 0 32 32" className="w-4 h-4 fill-none stroke-black stroke-[3px]"><path d="M27 18v9a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-9M16 4v20M9 11l7-7 7 7"></path></svg>
             </button>
           )}
-          <HeartButton />
+          <HeartButton className='relative'/>
         </div>
 
         {/* Badges (Original sau Popular) */}

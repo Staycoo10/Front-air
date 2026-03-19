@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { type Experience } from '../../data/experience';
 import HeartButton from '../../components/HeartButton'; 
 

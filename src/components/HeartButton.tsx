@@ -1,12 +1,18 @@
 import React, { useState } from 'react';
 
-const HeartButton: React.FC = () => {
+// 1. Definim ce "setări" (props) poate primi acest buton
+interface HeartProps {
+  className?: string; 
+}
+
+// 2. Setăm valoarea default pentru className 
+const HeartButton: React.FC<HeartProps> = ({ className = "absolute top-3 right-3 z-10" }) => {
   const [isLiked, setIsLiked] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
 
   const toggleLike = (e: React.MouseEvent) => {
     e.preventDefault(); 
-    e.stopPropagation(); // Oprește click-ul să deschidă pagina apartamentului/experienței
+    e.stopPropagation(); 
     
     setIsLiked(!isLiked);
     
@@ -19,7 +25,8 @@ const HeartButton: React.FC = () => {
   return (
     <button 
       onClick={toggleLike}
-      className="absolute top-3 right-3 focus:outline-none group/heart z-10"
+      // 3. Aici folosim variabila className în loc să hardcodăm poziția și stilul. Astfel, putem reutiliza acest buton în alte locuri fără să ne facem griji de poziționare.
+      className={`focus:outline-none group/heart ${className}`}
     >
       <svg 
         viewBox="0 0 32 32" 
