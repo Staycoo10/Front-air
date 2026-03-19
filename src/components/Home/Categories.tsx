@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import { Link } from "react-router-dom";
 import { cities } from "../../data/listings";
+import HeartButton from '../../components/HeartButton'; 
 
 export default function Categories() {
   // 1. Creăm o referință pentru containerul de scroll
@@ -60,12 +61,7 @@ export default function Categories() {
               <div className="absolute top-3 left-3 bg-white px-3 py-1 rounded-full shadow-md text-[12px] font-bold">
                 Guest favorite
               </div>
-
-              <button className="absolute top-3 right-3 hover:scale-110 transition">
-                <svg viewBox="0 0 32 32" className="w-6 h-6 fill-black/30 stroke-white stroke-2">
-                  <path d="m16 28c7-4.73 14-10 14-17a6.91 6.91 0 0 0 -7-7c-3.75 0-6.26 2.45-7 4.63c-.74-2.18-3.25-4.63-7-4.63a6.91 6.91 0 0 0 -7 7c0 7 7 12.27 14 17z" />
-                </svg>
-              </button>
+              <HeartButton />
             </div>
 
             <div className="flex justify-between items-start">

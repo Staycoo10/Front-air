@@ -1,6 +1,6 @@
-// components/ExperienceCard.tsx
-import React from 'react';
+import React, { useState } from 'react';
 import { type Experience } from '../../data/experience';
+import HeartButton from '../../components/HeartButton'; 
 
 interface Props {
   experience: Experience;
@@ -17,18 +17,15 @@ const ExperienceCard: React.FC<Props> = ({ experience }) => {
           className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
         />
         
-        {/* Heart Icon */}
-        <button className="absolute top-3 right-3 text-white hover:scale-110 transition-transform">
-          <svg viewBox="0 0 32 32" className="w-6 h-6 fill-black/50 stroke-white stroke-[2px]">
-            <path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-6.94c-2.24 0-4.66.86-6.47 2.76A9.67 9.67 0 0 0 16 8.58a9.67 9.67 0 0 0-.53-1.76C13.66 4.92 11.24 4.06 9 4.06A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
-          </svg>
-        </button>
+        {/* Aici am înlocuit butonul static cu noua componentă interactivă */}
+        <HeartButton />
 
         {/* Popular Badge */}
         {experience.isPopular && (
           <div className="absolute top-3 left-3 bg-white/90 px-2 py-1 rounded-md text-xs font-semibold shadow-sm">
             Popular
           </div>
+          
         )}
       </div>
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { type Service } from '../../data/services'; // ajustează calea către tipul Service
-
+import HeartButton from '../../components/HeartButton';
 interface Props {
   service: Service;
 }
@@ -22,11 +22,7 @@ const ServiceCard: React.FC<Props> = ({ service }) => {
               <svg viewBox="0 0 32 32" className="w-4 h-4 fill-none stroke-black stroke-[3px]"><path d="M27 18v9a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-9M16 4v20M9 11l7-7 7 7"></path></svg>
             </button>
           )}
-          <button className="text-white hover:scale-110 transition-transform">
-            <svg viewBox="0 0 32 32" className="w-7 h-7 fill-black/40 stroke-white stroke-[2px]">
-              <path d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-6.94c-2.24 0-4.66.86-6.47 2.76A9.67 9.67 0 0 0 16 8.58a9.67 9.67 0 0 0-.53-1.76C13.66 4.92 11.24 4.06 9 4.06A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"></path>
-            </svg>
-          </button>
+          <HeartButton />
         </div>
 
         {/* Badges (Original sau Popular) */}
