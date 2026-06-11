@@ -21,7 +21,7 @@ export default function Categories() {
   return (
     <div className="max-w-7xl mx-auto px-6 py-12">
       <div className="flex justify-between items-center mb-6">
-        <h2 className="text-2xl font-bold text-gray-800">Popular homes in Bucharest &rsaquo;</h2>
+        <h2 className="text-2xl font-bold text-gray-800">Popular homes in Romania &rsaquo;</h2>
         
         {/* 3. Butoanele actualizate în stilul Airbnb */}
         <div className="flex gap-2">

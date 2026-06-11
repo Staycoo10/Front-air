@@ -5,7 +5,7 @@ export const cities = [
     title: "Panoramic Mountain View Apartment",
     location: "Brașov, România",
     distance: "2 ore",
-    image: "https://images.unsplash.com/photo-1505761671935-60b3a7427bad?auto=format&fit=crop&w=512&h=384&q=80",
+    image: "https://case.md/oferte/1607/xlp__apartament-2-camere-de-vanzare-riscani-chisinau_67bf55cf7c0bb4.jpg",
     images: [
       "https://images.unsplash.com/photo-1505761671935-60b3a7427bad?auto=format&fit=crop&w=1200&h=800&q=80",
       "https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=600&h=400&q=80",
