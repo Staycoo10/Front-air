@@ -30,7 +30,7 @@ const ListingDetail = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           <div className="md:col-span-2">
             <div className="border-b pb-6">
-              <h2 className="text-xl font-semibold">Găzduit de Bogdan</h2>
+              <h2 className="text-xl font-semibold">Găzduit de Grigoree Roman</h2>
               <div className="flex gap-2 text-gray-500 text-sm mt-1">
                 <span>{listing.maxGuests} oaspeți</span> • 
                 <span>{listing.bedrooms} dormitoare</span> • 
