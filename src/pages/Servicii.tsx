@@ -28,7 +28,7 @@ const Servicii: React.FC = () => {
         <h1 className="text-3xl font-bold mt-12 mb-8">Popular with travelers from your area</h1>
 
         <ServiceSection 
-          title="Experiences in Romania" 
+          title="Experiences in Bucharest" 
           items={bucharest} 
           showArrow={true}
         />
